@@ -3,6 +3,14 @@ API from https://documenter.getpostman.com/view/10808728/SzS8rjbc#27454960-ea1c-
 ## Click link in below
 https://rizaradiarivaldo-covid19track.netlify.app
 
+
+## Dekstop 
+![Screenshot from 2020-10-31 16-31-43](https://user-images.githubusercontent.com/58997508/97775895-dfe05f00-1b96-11eb-8c2d-8e1c38fc0fc9.png)
+
+## Mobile
+![Screenshot from 2020-10-31 16-32-11](https://user-images.githubusercontent.com/58997508/97775899-e373e600-1b96-11eb-8ead-be8e4bed57df.png)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
