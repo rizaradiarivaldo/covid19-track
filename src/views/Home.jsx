@@ -16,10 +16,6 @@ import Cards from '../components/Card'
 import { GET_ALL_COUNTRIES, GET_ALL_DATA_COVID} from '../redux/actions/countries'
 
 const useStyles = makeStyles((theme) => ({
-  formControl: {
-    margin: theme.spacing(1),
-    minWidth: 400,
-  },
   selectEmpty: {
     marginTop: theme.spacing(2),
   },
@@ -64,7 +60,7 @@ const Home = () => {
             <div className="col-lg-12 col-11">
               <p>Terakhir Update : {dataCovid.lastUpdate ? dataCovid.lastUpdate.slice(0,10) : ''}</p>
               <div className="mb-4 mt-3">
-                <FormControl className={classes.formControl}>
+                <FormControl className="col-lg-3 col-11">
                   <InputLabel shrink id="countries-label">
                     Negara
                   </InputLabel>
@@ -77,7 +73,7 @@ const Home = () => {
                     className={classes.selectEmpty}
                   >
                     <MenuItem value="Global">
-                      <em>Global</em>
+                      Global
                     </MenuItem>
                     {
                     data.listCountries.map((item, index) => (
