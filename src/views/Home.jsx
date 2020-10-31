@@ -4,11 +4,26 @@ import { useSelector, useDispatch } from "react-redux";
 import imageHeader from '../assets/img/head3.png'
 import { Image } from 'react-bootstrap'
 
+import { makeStyles } from '@material-ui/core/styles';
+import InputLabel from '@material-ui/core/InputLabel';
+import MenuItem from '@material-ui/core/MenuItem';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
 
 
 import Cards from '../components/Card'
 
 import { GET_ALL_COUNTRIES, GET_ALL_DATA_COVID} from '../redux/actions/countries'
+
+const useStyles = makeStyles((theme) => ({
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 400,
+  },
+  selectEmpty: {
+    marginTop: theme.spacing(2),
+  },
+}));
 
 
 
@@ -17,6 +32,7 @@ const Home = () => {
   const history = useHistory()
 
   const data = useSelector((state) => state.countries)
+  const classes = useStyles();
   const [countries, setCountries] = useState()
 
   const dataCovid = {
@@ -45,29 +61,32 @@ const Home = () => {
         <div className="col-lg-12">
           <Image src={imageHeader} alt="imageHeader" width='400px' fluid />
           <div className="row d-flex justify-content-center">
-            <div className="col-lg-3 col-11">
-              <div>Terakhir Update : {dataCovid.lastUpdate ? dataCovid.lastUpdate.slice(0,10) : ''}</div>
-            {
-              data.isLoading ?
-                (
-                  <div>Loading...</div>
-                )
-                :
-                (
-                  <div>
-                    <select className="form-control" onClick={handleChange} required>
-                      <option value={'Global'}>Negara</option>
-                      {
-                        data.listCountries.map((item, index) => (
-                        <option key={index} value={item.name}>{item.name}</option>
-                        ))
-                      }
-                    </select>
-                    <p>{countries}</p>
-                  </div>
-                )
-              }
-
+            <div className="col-lg-12 col-11">
+              <p>Terakhir Update : {dataCovid.lastUpdate ? dataCovid.lastUpdate.slice(0,10) : ''}</p>
+              <div className="mb-4 mt-3">
+                <FormControl className={classes.formControl}>
+                  <InputLabel shrink id="countries-label">
+                    Negara
+                  </InputLabel>
+                  <Select
+                    labelId="countries-label"
+                    id="demo-simple-select-placeholder-label"
+                    value={countries}
+                    onChange={handleChange}
+                    displayEmpty
+                    className={classes.selectEmpty}
+                  >
+                    <MenuItem value="Global">
+                      <em>Global</em>
+                    </MenuItem>
+                    {
+                    data.listCountries.map((item, index) => (
+                    <MenuItem key={index} value={item.name}>{item.name}</MenuItem>
+                    ))
+                  }
+                  </Select>
+                </FormControl>
+              </div>
             </div>
           </div>
           <Cards data={dataCovid}/>
