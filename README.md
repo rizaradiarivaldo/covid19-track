@@ -1,9 +1,9 @@
 ## Covid19 Tracker
 Aplikasi ini dibuat dengan menggunakan ReactJS dan menggunakan API Open Source dari https://documenter.getpostman.com/view/10808728/SzS8rjbc#27454960-ea1c-4b91-a0b6-0468bb4e6712, Tujuan aplikasi ini dibuat adalah untuk memberikan data informasi tentang Kasus Covid-19 Berdasarkan negara dan dunia.
 Diantaranya adalah :
-- Jumlah Pasien Covid-19
-- Jumlah Pasien Sembuh Covid-19
-- Jumlah Pasien Meninggal Covid-19
+- Jumlah Kasus Covid-19
+- Jumlah Orang Sembuh Covid-19
+- Jumlah Orang Meninggal Covid-19
 
 
 ## Klik tautan dibawah untuk demo aplikasi
