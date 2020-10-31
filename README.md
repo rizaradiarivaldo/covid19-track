@@ -3,7 +3,7 @@ Aplikasi ini dibuat dengan menggunakan ReactJS dan menggunakan API Open Source d
 Diantaranya adalah :
 - Jumlah Kasus Covid-19
 - Jumlah Orang Sembuh dari Covid-19
-- Jumlah Orang Meninggal dari Covid-19
+- Jumlah Orang Meninggal karena Covid-19
 
 
 ## Klik tautan dibawah untuk demo aplikasi
