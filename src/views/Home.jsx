@@ -60,7 +60,7 @@ const Home = () => {
             <div className="col-lg-12 col-11">
               <p>Terakhir Update : {dataCovid.lastUpdate ? dataCovid.lastUpdate.slice(0,10) : ''}</p>
               <div className="mb-4 mt-3">
-                <FormControl className="col-lg-3 col-11">
+                <FormControl className="col-lg-3 col-sm-4 col-11">
                   <InputLabel shrink id="countries-label">
                     Negara
                   </InputLabel>

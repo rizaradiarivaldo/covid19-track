@@ -14,7 +14,7 @@ const Cards = (props) => {
               <h6 className="card-subtitle mb-2 text-muted">Orang</h6>
               <h5 className="card-text">Jumlah angka kasus COVID - 19</h5>
             </div>
-            <div className="card-footer bg-primary"></div>
+            <div className="card-footer" style={{backgroundColor: '#7F90FC'}}></div>
           </div>
           <div className="card text-left ml-5" style={{ width: '15rem'}}>
             <div className="card-body">
@@ -23,7 +23,7 @@ const Cards = (props) => {
               <h6 className="card-subtitle mb-2 text-muted">Orang</h6>
               <h5 className="card-text">Jumlah angka sembuh COVID - 19</h5>
             </div>
-            <div className="card-footer bg-danger"></div>
+            <div className="card-footer" style={{backgroundColor: '#90FE99'}}></div>
           </div>
           <div className="card text-left ml-5" style={{ width: '15rem'}}>
             <div className="card-body">
@@ -32,7 +32,7 @@ const Cards = (props) => {
               <h6 className="card-subtitle mb-2 text-muted">Orang</h6>
               <h5 className="card-text">Jumlah angka meninggal COVID - 19</h5>
             </div>
-            <div className="card-footer bg-warning"></div>
+            <div className="card-footer" style={{backgroundColor: '#FE7F89'}}></div>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@ const Cards = (props) => {
               <h6 className="card-subtitle mb-2 text-muted">Orang</h6>
               <h5 className="card-text">Jumlah angka kasus COVID - 19</h5>
             </div>
-            <div className="card-footer bg-primary"></div>
+            <div className="card-footer" style={{backgroundColor: '#7F90FC'}}></div>
           </div>
         </div>
         <div className="col-lg-12 d-flex justify-content-center align-items-center mt-3">
@@ -59,7 +59,7 @@ const Cards = (props) => {
               <h6 className="card-subtitle mb-2 text-muted">Orang</h6>
               <h5 className="card-text">Jumlah angka sembuh COVID - 19</h5>
             </div>
-            <div className="card-footer bg-danger"></div>
+            <div className="card-footer" style={{backgroundColor: '#90FE99'}}></div>
           </div>
         </div>
         <div className="col-lg-12 d-flex justify-content-center align-items-center mt-3 mb-3">
@@ -70,7 +70,7 @@ const Cards = (props) => {
               <h6 className="card-subtitle mb-2 text-muted">Orang</h6>
               <h5 className="card-text">Jumlah angka meninggal COVID - 19</h5>
             </div>
-            <div className="card-footer bg-warning"></div>
+            <div className="card-footer" style={{backgroundColor: '#FE7F89'}}></div>
           </div>
         </div>
       </div>
