@@ -7,7 +7,7 @@ Diantaranya adalah :
 
 
 ## Klik tautan dibawah untuk demo aplikasi
-https://rizaradiarivaldo-covid19track.netlify.app
+https://rizaradiarivaldo-covid19-tracker.netlify.app
 
 
 
